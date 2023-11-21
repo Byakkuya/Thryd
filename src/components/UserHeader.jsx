@@ -39,7 +39,7 @@ function UserHeader() {
           </Flex>
         </Box>
         <Box>
-          <Avatar name="mark zuck" src="/zuck-avatar.png" size={"xl"} />
+          <Avatar name="mark zuck" src="/zuck-avatar.png" size={{base : "md", md:"xl"}} />
         </Box>
       </Flex>
       <Text>I'm trying to make the world a more open place.</Text>
