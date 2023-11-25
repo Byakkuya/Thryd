@@ -6,8 +6,21 @@ const userSchema = new mongoose.Schema({
     email: { type: String, required: true, unique: true},
     password: { type: String, minLength:6,required: true },
     profilePic: { type: String, default: "" },
-    followers: { type: String, default: [] },
-    following: { type: String, default: [] },
+    followers: {
+        type: [{
+            type: String,
+            default: ""
+        }],
+        default: []
+    },
+    following: {
+        type: [{
+            type: String,
+            default: ""
+        }],
+        default: []
+    },
+    
     biography: { type: String, default: "" },
     
 },
